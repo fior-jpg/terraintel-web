@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shërbimet - TerrainTel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --bg-color: #fef9ec;
+      --text-color: #333;
+      --hero-bg: #fff6c7;
+      --card-bg: #fff;
+      --accent-color: #56b87f;
+    }
+
+    body.dark {
+      --bg-color: #1c1c1e;
+      --text-color: #e5e5e5;
+      --hero-bg: #2c2c2e;
+      --card-bg: #3a3a3c;
+      --accent-color: #66bb6a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: 0.3s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: var(--bg-color);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      background-color: var(--hero-bg);
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+    }
+
+    .service-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+
+    .service-card img {
+      width: 140px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+
+    .service-card p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--hero-bg);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TERRAINTEL</div>
+    <nav>
+      <ul>
+        <li><a href="terraintel web.html">HOME</a></li>
+        <li><a href="rrethnesh.html">RRETH NESH</a></li>
+        <li><a href="sherbimet.html">SHERBIMET</a></li>
+        <li><a href="kontakti.html">KONTAKTI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Shërbimet Tona</h1>
+    <p>Ne ofrojmë zgjidhje të mençura për bujqësinë moderne – të personalizuara, të automatizuara dhe të efektshme.</p>
+  </section>
+
+  <section class="services-section">
+    <div class="service-card">
+      <img src="pexels-corin-1105018.jpg" alt="Analiza e Tokës" />
+      <h3>Analiza e Tokës</h3>
+      <p>Matje precize të lagështisë, pH-së dhe përbërjes për të përcaktuar kultivimin optimal.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="pexels-binyaminmellish-169523.jpg" alt="Këshillim i personalizuar" />
+      <h3>Këshillim i Mençur</h3>
+      <p>Platformë me algoritme AI që sugjeron kultivime sipas klimës dhe tokës tuaj.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="pexels-gelgas-401213.jpg" alt="Monitorim i të mbjellurave" />
+      <h3>Monitorim në Kohë Reale</h3>
+      <p>Senzorë të zgjuar dhe aplikacion për të ndjekur zhvillimin e bimëve tuaja.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TerrainTel - Zgjidhje inteligjente për bujqësinë.
+  </footer>
+</body>
+</html>

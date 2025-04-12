@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakti - TerrainTel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    :root {
+      --bg-color: #fef9ec;
+      --text-color: #333;
+      --hero-bg: #fff6c7;
+      --card-bg: #fff;
+      --accent-color: #56b87f;
+    }
+
+    body.dark {
+      --bg-color: #1c1c1e;
+      --text-color: #e5e5e5;
+      --hero-bg: #2c2c2e;
+      --card-bg: #3a3a3c;
+      --accent-color: #66bb6a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: 0.3s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: var(--bg-color);
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    .hero {
+      text-align: center;
+      background-color: var(--hero-bg);
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 20px;
+    }
+
+    .contact-info, .contact-form {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h3,
+    .contact-form h3 {
+      margin-bottom: 20px;
+      color: var(--accent-color);
+    }
+
+    .contact-info p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .contact-form button {
+      padding: 12px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+    }
+
+    .contact-form button:hover {
+      background-color: #4aa06a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--hero-bg);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TERRAINTEL</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="rrethnesh.html">RRETH NESH</a></li>
+        <li><a href="sherbimet.html">SHERBIMET</a></li>
+        <li><a href="kontakti.html">KONTAKTI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Na Kontaktoni</h1>
+    <p>Jemi këtu për t'ju ndihmuar! Na kontaktoni për çdo pyetje apo bashkëpunim të mundshëm.</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h3>Informacion Kontakti</h3>
+      <p><strong>Email:</strong> info@terrainintel.com</p>
+      <p><strong>Telefon:</strong> +355 69 123 4567</p>
+      <p><strong>Adresa:</strong> Rruga e Bujqësisë, Tiranë, Shqipëri</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Formular Kontakti</h3>
+      <form>
+        <input type="text" placeholder="Emri juaj" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="4" placeholder="Mesazhi juaj" required></textarea>
+        <button type="submit">Dërgo Mesazhin</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 TerrainTel - Zgjidhje inteligjente për bujqësinë.
+  </footer>
+</body>
+</html>

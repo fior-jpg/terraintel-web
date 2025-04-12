@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hapat e Përdorimit</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fef9f1;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #4caf50, #81c784);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: slideDown 1s ease forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 25px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: white;
+      margin: 50px auto;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.2s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero h1 {
+      color: #4caf50;
+      margin-bottom: 20px;
+      font-size: 36px;
+      position: relative;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .hero h1::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: #4caf50;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .hero p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    .hero p br {
+      line-height: 3;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">TERRAINTEL</div>
+    <nav>
+      <ul>
+        <li><a href="terraintel web.html">KTHEHU</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hapat e Përdorimit</h1>
+    <p>
+      1. Lidhja e Microbit me sensorët për të matur lagështinë, temperaturën dhe dritën e nevojshme për bimën.<br />
+      2. Konfigurimi i Microbit për të transmetuar të dhënat në aplikacion.<br />
+      3. Hapja e aplikacionit për të monitoruar kushtet aktuale të bimës.<br />
+      4. Aplikacioni jep këshilla se çfarë veprimesh të ndërmerren, si ujitja ose ndryshimi i vendndodhjes së bimës.<br />
+      5. Monitorimi i vazhdueshëm për t'u siguruar që bima është në kushte optimale.
+    </p>
+  </section>
+</body>
+</html>
