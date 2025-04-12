@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TerrainTel</title>
+  <style>
+:root {
+  --bg-color: #fef9ec;
+  --text-color: #333;
+  --hero-bg: #fff6c7;
+  --card-bg: #fff;
+  --accent-color: #4caf50;
+}
+
+body.dark {
+  --bg-color: #1c1c1e;
+  --text-color: #e5e5e5;
+  --hero-bg: #2c2c2e;
+  --card-bg: #3a3a3c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 28px;
+  color: var(--accent-color);
+  text-shadow: 0 0 8px rgba(76, 175, 80, 0.7);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px var(--accent-color);
+  }
+  to {
+    text-shadow: 0 0 15px var(--accent-color), 0 0 25px var(--accent-color);
+  }
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+nav ul li button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+nav ul li button:hover {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  background-color: var(--hero-bg);
+  padding: 100px 20px;
+  animation: fadeIn 2s ease;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--accent-color);
+}
+
+.hero .logo {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  animation: fadeInUp 2s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+  width: 250px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">TERRAINTEL</div>
+    <nav>
+      <ul>
+        <li><a href="terraintel web.html">HOME</a></li>
+        <li><a href="rrethnesh.html">RRETH NESH</a></li>
+        <li><a href="sherbimet.html">SHERBIMET</a></li>
+        <li><a href="kontakti.html">KONTAKTI</a></li>
+        <li><button id="toggle-mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="logo.jpg" class="logo" alt="TerrainTel Logo">
+    <h1>Smart seeds, smarter harvests.</h1>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <a href="hapat.html">
+        <img src="pexels-icon0-736779.jpg" alt="Hapat e Përdorimit">
+        <h3>HAPAT E PËRDORIMIT</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="tembjellat.html">
+        <img src="gruri.jpg" alt="Të mbjellurat">
+        <h3>TË MBJELLURAT</h3>
+      </a>
+    </div>
+    <div class="card">
+      <a href="ekipiyne.html">
+        <img src="team.jpg" alt="Ekipi jonë">
+        <h3>EKIPI JONË</h3>
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-mode");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+      toggleBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
